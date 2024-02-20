@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xojo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0039-tenant/tkrw-pr714-0075-0039-app/devfile-sample-xojo@sha256:9eb32649065588b4bae49d8a0be9e623fff1e48b8823d16975d340a7f3083646
+        name: my-nodejs
+        resources: {}
+status: {}
